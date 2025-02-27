@@ -1,0 +1,13 @@
+package com.pskwiercz.springaimonitoring;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringAiMonitoringApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringAiMonitoringApplication.class, args);
+    }
+
+}
