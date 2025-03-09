@@ -35,9 +35,10 @@ http://localhost:9090/query?g0.expr=gen_ai_client_token_usage_total&g0.show_tree
 
 Grafana
 1. Login to Grafana (user/password: admin/admin)
-2. Go to Configuration -> Data Sources -> Add data source
-3. Add Prometheus data source (Connection field set to http://localhost:9090/)
-4. Go to Metrics and in "Search metrics" field type "gen_ai"
+2. http://localhost:3000
+2. Go to Connections -> Data Sources -> Add data source
+3. Add Prometheus data source (Connection field set to http://host.docker.internal:9090) and choose button "Save & Test"
+4. Go to Explore -> Metrics and in "Search metrics" field type "gen_ai"
 
 You will see the metrics related to Spring AI:
 ![Alt text](/grafana.png?raw=true "Grafana")
